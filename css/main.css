@@ -167,3 +167,11 @@ input{
     margin-left: 30%;
 }
 
+/*--------------------------------index quelques positionnement----------------------------*/
+#video,aside{
+    margin-top: 4%;
+}
+h2 p{
+    text-align: justify;
+}
+
