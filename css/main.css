@@ -137,7 +137,7 @@ div#carrousel figure {
     font-size: 0;
     left: 0;
     text-align: left;
-    animation: 5s slide infinite; /*j'ai mis 5s pr tester*/
+    animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
 }
 /*---------------------------------------formulaire -------------------------------------------*/
 form{
