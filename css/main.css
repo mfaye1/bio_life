@@ -17,12 +17,14 @@ aside, div, section, header, footer, nav {
 /* width a 80% pour la rendre responsive*/
 div#carrousel{
     width: 80%;
-    max-width: 1000px;
+    max-width: 800px;
+    /*cache ce qui depasse*/
+    overflow: hidden;
 }
 
 div#carrousel figure{
     position: relative;
-    width: 600%;
+    width: 400%;
     margin: 0;
     padding: 0;
     font-size: 0;
@@ -33,13 +35,6 @@ div#carrousel figure img{
     width: 20%;
     height: auto;
     float: left;
-}
-
-div#carrousel{
-    width: 80%;
-    max-width: 1000px;
-    /*cache ce qui depasse*/
-    overflow: hidden;
 }
 
 /*---ANIMATION---*/
