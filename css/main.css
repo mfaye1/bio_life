@@ -12,7 +12,61 @@ aside, div, section, header, footer, nav {
 /*----------------------------------------footer----------------------------------------------------*/
 
 
+/*----------------------------------------carrousel---------------------------------------------------*/
 
+/* width a 80% pour la rendre responsive*/
+div#carrousel{
+    width: 80%;
+    max-width: 1000px;
+}
+
+div#carrousel figure{
+    position: relative;
+    width: 600%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div#carrousel figure img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+div#carrousel{
+    width: 80%;
+    max-width: 1000px;
+    /*cache ce qui depasse*/
+    overflow: hidden;
+}
+
+/*---ANIMATION---*/
+@keyframes slide {
+    0% { left: 0%;}
+    20% { left: 0%;}
+    25% { left: -100%;}
+    45% { left: -100%;}
+    50% { left: -200%;}
+    70% { left: -200%;}
+    75% { left: -300%;}
+    95% { left: -300%;}
+    100% { left: -400%;}
+}
+
+/*On appel l'animatiion*/
+
+div#carrousel figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slide infinite;
+}
 /*---------------------------------------formulaire -------------------------------------------*/
 form{
     width: 80%;
