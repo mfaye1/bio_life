@@ -13,11 +13,11 @@
 
             <div class="div_form">
                 <label for="nom">Nom: </label>
-                <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom de famille">
+                <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom de famille" required pattern="#^[a-z]+[ \-']?[[a-z]+[ \-']?]*[a-z]+$#">
             </div>
             <div class="div_form">
                 <label for="prenom">Prenom: </label>
-                <input type="text" name="prenom" id="prenom" value="" placeholder="Entrez votre Prenom">
+                <input type="text" name="prenom" id="prenom" value="" placeholder="Entrez votre Prenom" required pattern="#^[a-z]+[ \-']?[[a-z]+[ \-']?]*[a-z]+$#">
             </div>
             <div class="div_form">
                 <label for="phone">Telephone: </label>
@@ -26,6 +26,13 @@
             <div class="div_form">
                 <label for="mail">Email: </label>
                 <input type="email" name="mail" id="mail" value="" placeholder="example@exemple.com">
+            </div>
+            <div class="div_form">
+                <label for="sexe_h">Homme:</label>
+                <input type="radio" name="sexe" id="sexe_h" value="sexe_h"/>
+                <br/><br/>
+                <label for="sexe_f">Femme:</label>
+                <input type="radio" name="sexe" id="sexe_f" value="sexe_f"/>
             </div>
             <div class="div_form">
                 <label for="post">Code Postal: </label>
@@ -45,6 +52,29 @@
         </fieldset>
         <fieldset>
             <legend>Votre Commande</legend>
+            <div class="div_form">
+                <label for="date">Date de la Commande: </label>
+                <input type="date" name="date" id="date" >
+            </div>
+            <div class="div_form">
+                <label for="choix">Votre Type de Bio: </label>
+                <input type="text" name="liste" list="liste" id="choix">
+                <datalist id="liste" >
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                </datalist>
+            </div>
+            <div class="div_form">
+                <label for="nombre">Nombre de produits</label>
+                <input type="number" name="nombre" id="nombre">
+            </div>
+            <div class="div_form">
+                <label for="total">Total:</label>
+                <input type="text" name="total" id="total" >
+            </div>
         </fieldset>
         <input type="submit" name="submit" id="submit">
     </form>
