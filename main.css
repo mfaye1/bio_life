@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+aside, div, section, header, footer, nav {
+    display: block;
+}
+
+/*------------le wrapper a 80% (mf)-----------------*/
+#wrapper{
+    width: 80%;
+    margin: auto;
+}
+
+
+/*------------------------------------le grille------------------------------------------------*/
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+/*------------------------------grille de desktop-------------------------------------------------------*/
+.col-1  {width: 8.33%;}
+.col-2  {width: 16.66%;}
+.col-3  {width: 25%;}
+.col-4  {width: 33.33%;}
+.col-5  {width: 41.66%;}
+.col-6  {width: 50%;}
+.col-7  {width: 58.33%;}
+.col-8  {width: 66.66%;}
+.col-9  {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*--------------------------------grillle de tablette-------------------------------------------------*/
+.col-t-1  {width: 8.33%;}
+.col-t-2  {width: 16.66%;}
+.col-t-3  {width: 25%;}
+.col-t-4  {width: 33.33%;}
+.col-t-5  {width: 41.66%;}
+.col-t-6  {width: 50%;}
+.col-t-7  {width: 58.33%;}
+.col-t-8  {width: 66.66%;}
+.col-t-9  {width: 75%;}
+.col-t-10 {width: 83.33%;}
+.col-t-11 {width: 91.66%;}
+.col-t-12 {width: 100%;}
+/*--------------------------------------------grille mobile-------------------------------------------*/
+.col-m-1  {width: 8.33%;}
+.col-m-2  {width: 16.66%;}
+.col-m-3  {width: 25%;}
+.col-m-4  {width: 33.33%;}
+.col-m-5  {width: 41.66%;}
+.col-m-6  {width: 50%;}
+.col-m-7  {width: 58.33%;}
+.col-m-8  {width: 66.66%;}
+.col-m-9  {width: 75%;}
+.col-m-10 {width: 83.33%;}
+.col-m-11 {width: 91.66%;}
+.col-m-12 {width: 100%;}
+
+
+/*-----------------------------------------HEADER------------------------------------------------------*/
+nav.col-9{
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+ li.col-3{
+     display: inline;
+     padding: 0;
+     text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+
+}
+
+/*----------------------------------------footer----------------------------------------------------*/
+
+
+/*----------------------------------------carrousel---------------------------------------------------*/
+
+/* width a 80% pour la rendre responsive*/
+/*div#carrousel{
+    width: 100%;
+    max-width: 1000px;    !*je l'ai mise en commentaire parceque tiu l'a declarer 2 fois dans le css *!
+}  */
+div#carrousel figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div#carrousel figure img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+div#carrousel{
+    width: 100%;        /*je lui aai donner 100 pour qu'il occupe l'espace du wrapper*/
+    max-width: 1000px;
+    /*cache ce qui depasse*/
+    overflow: hidden;
+}
+/*---ANIMATION---*/
+@keyframes slide {
+    0% { left: 0;}
+    20% { left: 0;}
+    25% { left: -100%;}
+    45% { left: -100%;}
+    50% { left: -200%;}
+    70% { left: -200%;}
+    75% { left: -300%;}
+    95% { left: -300%;}
+    100% { left: -400%;}
+}
+
+/*On appel l'animatiion*/
+
+div#carrousel figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 5s slide infinite; /*j'ai mis 5s pr tester*/
+}
+/*---------------------------------------formulaire -------------------------------------------*/
+form{
+    width: 80%;
+    margin: auto;
+}
+fieldset{
+    padding: 5%;
+    margin-top: 2%;
+    border-radius: 15px;
+    box-shadow: #c2c2c2 5px 5px ;
+}
+.div_form{
+    display:block ;
+    margin-top:3%;
+}
+label{
+    display: inline-block;
+    width: 30%;
+}
+input{
+    border-radius: 7px;
+    width: 250px;
+}
+#submit{
+    margin-top: 3%;
+    margin-left: 30%;
+}
+
