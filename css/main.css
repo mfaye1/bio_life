@@ -84,7 +84,9 @@ nav ul li a{
 }
 
 /*----------------------------------------footer----------------------------------------------------*/
-
+footer{
+    text-align: center;
+}
 
 /*----------------------------------------carrousel---------------------------------------------------*/
 
@@ -138,6 +140,36 @@ div#carrousel figure {
     left: 0;
     text-align: left;
     animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
+}
+
+/*---------------------------------------Catalogue -------------------------------------------*/
+#tableau{
+    width:30%;
+    display: inline-block;
+}
+/*je le met si on en a besoin*/
+table td{
+
+}
+
+#container_produits{
+    width: 60%;
+    display: inline-block;
+}
+.catalogue_image{
+    width: 30%; /*la width sert simplement pour une visualisation plus facile*/
+}
+/*Boutons*/
+.au_panier{
+    width: 150px;
+}
+
+.catalogue_image{
+    display: inline-block;
+}
+
+h3{
+    width: 25%;
 }
 /*---------------------------------------formulaire -------------------------------------------*/
 form{
