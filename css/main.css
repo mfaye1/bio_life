@@ -210,9 +210,33 @@ section{
     width: 100%; /*la width sert simplement pour une visualisation plus facile*/
 }
 /*Boutons*/
+/*
 .au_panier{
-    width: 150px;
+    width: 150px; !*j'ai mis un a au lieu d'un input*!
 }
+*/
+/*css du a*/
+section.col-9 a{
+    display: block;
+    background-color: #ADFF2F;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #adff2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c3c3c3 inset;
+    color: black;
+    margin: 5%;
+}
+section.col-9 a:hover{
+    padding-top: 2px;
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px #adff2f;
+}
+/***********************/
 
 .catalogue_image{
     display: inline-block;
@@ -221,6 +245,7 @@ section{
 h3{
     width: 25%;
 }
+
 /*---------------------------------------formulaire -------------------------------------------*/
 form{
     width: 80%;
