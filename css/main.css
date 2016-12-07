@@ -207,3 +207,15 @@ h2 p{
     text-align: justify;
 }
 
+
+/*-------------------------------------details-----------------------------------------------*/
+#details{
+    width: 80%;
+    margin: auto;
+}
+#details img{
+    width: 50%;
+}
+#details h1{
+    margin-top:0;
+}
