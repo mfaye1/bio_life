@@ -5,6 +5,20 @@ aside, div, section, header, footer, nav {
     display: block;
 }
 
+body{
+    background-color:linear-gradient(to bottom,  #fefefd 0%,#dce3c4 0%,#dce3c4 0%,#dce3c4 35%,#4f4433 94%,#4f4433 99%,#4f4433 100%,#4f4433 100%,#4f4433 100%,#4f4433 100%);
+}
+/*le degrade*/
+/*
+background: #fefefd; !* Old browsers *!
+background:-moz-linear-gradient(top,  #fefefd 0%, #dce3c4 0%, #dce3c4 0%, #dce3c4 35%, #4f4433 94%, #4f4433 99%, #4f4433 100%, #4f4433 100%, #4f4433 100%, #4f4433 100%); !* FF3.6-15 *!
+background:-webkit-linear-gradient(top,  #fefefd 0%,#dce3c4 0%,#dce3c4 0%,#dce3c4 35%,#4f4433 94%,#4f4433 99%,#4f4433 100%,#4f4433 100%,#4f4433 100%,#4f4433 100%); !* Chrome10-25,Safari5.1-6 *!
+background:linear-gradient(to bottom,  #fefefd 0%,#dce3c4 0%,#dce3c4 0%,#dce3c4 35%,#4f4433 94%,#4f4433 99%,#4f4433 100%,#4f4433 100%,#4f4433 100%,#4f4433 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', endColorstr='#4f4433',GradientType=0 ); !* IE6-9 *!
+*/
+
+
+
 /*------------le wrapper a 80% (mf)-----------------*/
 #wrapper{
     width: 80%;
@@ -66,12 +80,30 @@ aside, div, section, header, footer, nav {
 
 
 /*-----------------------------------------HEADER------------------------------------------------------*/
-nav.col-9{
+header{
+    height: 100px;
+    background-color: #adff2f;
+}
+header div{
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}
+header div img{
+    height: 100px;
     padding: 0;
 }
-nav ul{
+nav{
+    height: 100px;
+    padding: 0;
+}
+
+nav ul.row{
+    display: inline;
+    line-height: 100px;
     list-style-type: none;
     padding: 0;
+    margin:0;
 }
  li.col-3{
      display: inline;
@@ -85,8 +117,8 @@ nav ul li a{
 
 /*----------------------------------------footer----------------------------------------------------*/
 footer{
-    height: 5%;
-    background-color: darkgrey;
+    height: 100px;
+    background-color: rgb(173,255,47);
 }
 
 /*----------------------------------------carrousel---------------------------------------------------*/
@@ -113,7 +145,7 @@ div#carrousel figure img{
 
 div#carrousel{
     width: 100%;        /*je lui aai donner 100 pour qu'il occupe l'espace du wrapper*/
-    max-width: 1000px;
+    /*max-width: 1000px;*/  /*je l<ai fait pour enlever le blanc qui etai a la droite du carousel*/
     /*cache ce qui depasse*/
     overflow: hidden;
 }
@@ -269,4 +301,13 @@ aside img.col-4:last-of-type{
 #description{
     margin: auto;
     text-align: center;
+}
+#details div.col-4 p:nth-of-type(2){
+    margin-top: 0;
+}
+#details div.col-4 p:first-of-type{
+    font-weight: bold;
+    font-size: 20px;
+    color: #adff2f;
+    margin-bottom: 0;
 }

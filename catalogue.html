@@ -9,19 +9,20 @@
 </head>
 <body>
 <div id="wrapper">
-    <header class="row">
-        <img src="images/Logo_bio.jpg" alt="logo_site" class="col-3"/>
-        <nav class="col-9">
-            <ul class="row">
-                <li class="col-3"><a href="index.html">Acceuil</a></li><!--
-            -->
-                <li class="col-3"><a href="#">A propos</a></li><!--
-            -->
-                <li class="col-3"><a href="catalogue.html">Catalogue</a></li><!--
-            -->
-                <li class="col-3"><a href="formulaire.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="row" >
+            <div class="col-3">
+                <img src="images/Logo_bio.jpg" alt="logo_site" />
+            </div>
+            <nav class="col-9">
+                <ul class="row">
+                    <li class="col-3"><a href="index.html">Acceuil</a></li><!--
+            --><li class="col-3"><a href="#">A propos</a></li><!--
+            --><li class="col-3"><a href="catalogue.html">Catalogue</a></li><!--
+            --><li class="col-3"><a href="formulaire.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div id="tableau">
@@ -92,8 +93,15 @@
         </div>
 
     </main>
-    <footer>
-        <p>&#169 2016, Droits réservé @isiprojet</p>
+    <footer class="row">
+        <div class="col-8">
+            <p>&#169 2016, Droits réservé @isiprojet</p>
+        </div>
+        <div class="col-4">
+            <a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="images/Logo-facebook-footer.png" alt="facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter-ios-logo%20copy.png" alt="twitter"></a>
+            <a href="https://linkedin.com/" target="_blank"><img id="linked" src="images/linkeed.png" alt="google"></a>
+        </div>
     </footer>
 </div>
 </body>
