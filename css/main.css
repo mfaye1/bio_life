@@ -85,7 +85,8 @@ nav ul li a{
 
 /*----------------------------------------footer----------------------------------------------------*/
 footer{
-    text-align: center;
+    height: 5%;
+    background-color: darkgrey;
 }
 
 /*----------------------------------------carrousel---------------------------------------------------*/
@@ -206,16 +207,66 @@ input{
 h2 p{
     text-align: justify;
 }
-
-
+aside img.col-4:first-of-type{
+    padding-left: 0;
+}
+aside img.col-4:last-of-type{
+    padding-right: 0;
+}
 /*-------------------------------------details-----------------------------------------------*/
+/*le font 3D*/
+@font-face {
+    font-family: '3dumbregular';
+    src: url('fonts/3dumb-webfont.eot');
+    src: url('fonts/3dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/3dumb-webfont.woff2') format('woff2'),
+    url('fonts/3dumb-webfont.woff') format('woff'),
+    url('fonts/3dumb-webfont.ttf') format('truetype'),
+    url('fonts/3dumb-webfont.svg#3dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 #details{
-    width: 80%;
-    margin: auto;
+    width: 70%;
+    margin: 10%;
+    border: 2px solid #adff2f;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 8px 8px #c3c3c3;
 }
 #details img{
-    width: 50%;
+    width: 60%;
+    border-right: 2px solid #ADFF2F;
 }
 #details h1{
     margin-top:0;
+    font-family: '3dumbregular',sans-serif;
+}
+#details a{
+    display: block;
+    background-color: #ADFF2F;
+    width: 100px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #adff2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c3c3c3 inset;
+    color: black;
+    margin-left: 40%;
+    margin-top: 30%;
+}
+#details a:hover{
+    padding-top: 2px;
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px #adff2f;
+
+}
+
+#description{
+    margin: auto;
+    text-align: center;
 }
