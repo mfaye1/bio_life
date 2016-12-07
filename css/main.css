@@ -144,21 +144,20 @@ div#carrousel figure {
 }
 
 /*---------------------------------------Catalogue -------------------------------------------*/
-#tableau{
+#list{
     width:30%;
     display: inline-block;
 }
-/*je le met si on en a besoin*/
-table td{
 
-}
-
-#container_produits{
+section{
     width: 60%;
     display: inline-block;
 }
+.cadre_produit{
+    width: 45%;
+}
 .catalogue_image{
-    width: 30%; /*la width sert simplement pour une visualisation plus facile*/
+    width: 100%; /*la width sert simplement pour une visualisation plus facile*/
 }
 /*Boutons*/
 .au_panier{
