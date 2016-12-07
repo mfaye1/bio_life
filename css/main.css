@@ -85,7 +85,8 @@ nav ul li a{
 
 /*----------------------------------------footer----------------------------------------------------*/
 footer{
-    text-align: center;
+    height: 5%;
+    background-color: darkgrey;
 }
 
 /*----------------------------------------carrousel---------------------------------------------------*/
@@ -206,8 +207,12 @@ input{
 h2 p{
     text-align: justify;
 }
-
-
+aside img.col-4:first-of-type{
+    padding-left: 0;
+}
+aside img.col-4:last-of-type{
+    padding-right: 0;
+}
 /*-------------------------------------details-----------------------------------------------*/
 /*le font 3D*/
 @font-face {
