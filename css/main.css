@@ -5,6 +5,10 @@ aside, div, section, header, footer, nav {
     display: block;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
 }
 /*le degrade*/
@@ -246,7 +250,7 @@ section.col-9 a:hover{
 }
 
 h3{
-    width: 25%;
+    width: 70%;
 }
 
 /*---------------------------------------formulaire -------------------------------------------*/
