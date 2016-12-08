@@ -277,7 +277,7 @@ section{
 }
 */
 /*css du a*/
-section.col-9 a{
+section a{
     display: block;
     background-color: #ADFF2F;
     width: 200px;
@@ -296,6 +296,10 @@ section.col-9 a:hover{
     background-color: gray;
     color: white;
     box-shadow: 2px 2px #adff2f;
+}
+
+div#liste li{
+    padding: 2% 0;
 }
 /***********************/
 
