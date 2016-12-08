@@ -10,6 +10,9 @@ html{
 }
 
 body{
+    background: -moz-linear-gradient(#fff, #c3c3c3);
+    background: -webkit-linear-gradient(#fff, #c3c3c3);
+    background: -o-linear-gradient(#fff, #c3c3c3);
 }
 /*le degrade*/
 /*
@@ -26,6 +29,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 #wrapper{
     width: 80%;
     margin: auto;
+    background-color: white;
 }
 
 
@@ -238,6 +242,7 @@ div#liste ul li{
     background-color: #c3c3c3;
 }
 #liste h1{
+    color: white;
     text-align: center;
     margin-bottom: 0;
     background-color: #adff2f;
@@ -330,9 +335,32 @@ input{
     color: black;
     margin-top: 3%;
     margin-left: 30%;
-    margin-bottom: 3%;
+    /*margin-bottom: 3%;*/
 }
 #submit:hover{
+    padding-top: 2px;
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px #adff2f;
+}
+form a{
+    display: block;
+    background-color: #ADFF2F;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #adff2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c3c3c3 inset;
+    color: black;
+    margin-left: 60%;
+    margin-bottom: 3%;
+    margin-top: -3.5%;
+
+}
+form a:hover {
     padding-top: 2px;
     background-color: gray;
     color: white;
@@ -421,3 +449,55 @@ aside img.col-4:last-of-type{
     color: #adff2f;
     margin-bottom: 0;
 }
+/**************modal*******************/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #adff2f);
+    background: -webkit-linear-gradient(#fff, #adff2f);
+    background: -o-linear-gradient(#fff, #adff2f);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #adff2f; }
