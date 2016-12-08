@@ -5,6 +5,10 @@ aside, div, section, header, footer, nav {
     display: block;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
 }
 /*le degrade*/
@@ -81,7 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 /*-----------------------------------------HEADER------------------------------------------------------*/
 header{
     height: 100px;
-    background-color: #adff2f;
+    /*!*background-color: #adff2f;*! je le met en commentaire simplement pour que tu me donne ton avis sur le style que j'ai mis*/
 }
 header div{
     height: 100px;
@@ -92,6 +96,7 @@ header div img{
     height: 100px;
     padding: 0;
 }
+/*---------------NAVIGATION--------------*/
 nav{
     height: 100px;
     padding: 0;
@@ -111,13 +116,50 @@ nav ul.row{
 }
 nav ul li a{
     text-decoration: none;
+    color: #49d135;
+    position: relative;
+    transition: all 2s;
+}
 
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -5px auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #62c446;
+    z-index: 1;
+}
+nav ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
 }
 
 /*----------------------------------------footer----------------------------------------------------*/
 footer{
     height: 100px;
-    background-color: rgb(173,255,47);
+    /*background-color: rgb(173,255,47);*/
+    background-color: #49d135;
 }
 
 /*----------------------------------------carrousel---------------------------------------------------*/
@@ -138,8 +180,9 @@ div#carrousel figure{
 
 div#carrousel figure img{
     width: 20%;
-    height: auto;
+    height: 600px;
     float: left;
+    margin-top: 20px;
 }
 
 div#carrousel{
@@ -173,6 +216,9 @@ div#carrousel figure {
     text-align: left;
     animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
 }
+
+
+
 
 /*---------------------------------------Catalogue -------------------------------------------*/
 /*
@@ -243,7 +289,7 @@ section.col-9 a:hover{
 }
 
 h3{
-    width: 25%;
+    width: 70%;
 }
 
 /*---------------------------------------formulaire -------------------------------------------*/
@@ -292,7 +338,10 @@ input{
     color: white;
     box-shadow: 2px 2px #adff2f;
 }
-
+/*---------------------------------------Index -------------------------------------------*/
+#text-index{
+    /*max-height: 100px;*/
+}
 /*--------------------------------index quelques positionnement----------------------------*/
 #video,aside{
     margin-top: 4%;
