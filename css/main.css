@@ -7,6 +7,7 @@ aside, div, section, header, footer, nav {
 
 html{
     font-size: 16px;
+    font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
 }
 
 body{
@@ -330,6 +331,7 @@ fieldset{
     margin-top: 2%;
     border-radius: 15px;
     box-shadow: #c2c2c2 5px 5px ;
+    background-color: #fbfbfb;
 }
 .div_form{
     display:block ;
