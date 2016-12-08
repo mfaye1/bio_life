@@ -143,6 +143,9 @@ div#carrousel figure {
     animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
 }
 
+
+
+
 /*---------------------------------------Catalogue -------------------------------------------*/
 #list{
     width:30%;
@@ -198,7 +201,10 @@ input{
     margin-top: 3%;
     margin-left: 30%;
 }
-
+/*---------------------------------------Index -------------------------------------------*/
+#text-index{
+    /*max-height: 100px;*/
+}
 /*--------------------------------index quelques positionnement----------------------------*/
 #video,aside{
     margin-top: 4%;
