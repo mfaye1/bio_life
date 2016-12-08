@@ -349,7 +349,7 @@ form{
     margin: auto;
 }
 fieldset{
-    border: rgba(149, 218, 39, 0.37);
+    border: 0.5px solid rgba(149, 218, 39, 0.7);
     padding: 5%;
     margin-top: 2%;
     border-radius: 15px;
