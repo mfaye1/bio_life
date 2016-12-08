@@ -59,19 +59,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-/*--------------------------------grillle de tablette-------------------------------------------------*/
-.col-t-1  {width: 8.33%;}
-.col-t-2  {width: 16.66%;}
-.col-t-3  {width: 25%;}
-.col-t-4  {width: 33.33%;}
-.col-t-5  {width: 41.66%;}
-.col-t-6  {width: 50%;}
-.col-t-7  {width: 58.33%;}
-.col-t-8  {width: 66.66%;}
-.col-t-9  {width: 75%;}
-.col-t-10 {width: 83.33%;}
-.col-t-11 {width: 91.66%;}
-.col-t-12 {width: 100%;}
 /*--------------------------------------------grille mobile-------------------------------------------*/
 .col-m-1  {width: 8.33%;}
 .col-m-2  {width: 16.66%;}
@@ -229,6 +216,7 @@ div#carrousel figure {
     left: 0;
     text-align: left;
     animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
+
 }
 
 
@@ -372,10 +360,10 @@ input{
     display: block;
     background-color: #ADFF2F;
     width: 200px;
-    height: 30px;
+    height: 50px;
     text-decoration: none;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
     border: 1px solid #adff2f;
     border-radius: 5px;
     box-shadow: 2px 2px #c3c3c3 inset;
@@ -394,17 +382,16 @@ form a{
     display: block;
     background-color: #ADFF2F;
     width: 200px;
-    height: 30px;
+    height: 50px;
     text-decoration: none;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
     border: 1px solid #adff2f;
     border-radius: 5px;
     box-shadow: 2px 2px #c3c3c3 inset;
     color: black;
-    margin-left: 60%;
-    margin-bottom: 3%;
-    margin-top: -3.5%;
+    margin-top: 3%;
+    margin-left: 30%;
 
 }
 form a:hover {
@@ -548,3 +535,33 @@ aside img.col-4:last-of-type{
 }
 
 .close:hover { background: #adff2f; }
+
+/**************------------------------------------------- Pour les tablettes 960px -----------------------------------*/
+@media only screen and (max-width: 960px) {
+    body{
+        background-color: white;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    /*--------------------------------grillle de tablette-------------------------------------------------*/
+    .col-t-1  {width: 8.33%;}
+    .col-t-2  {width: 16.66%;}
+    .col-t-3  {width: 25%;}
+    .col-t-4  {width: 33.33%;}
+    .col-t-5  {width: 41.66%;}
+    .col-t-6  {width: 50%;}
+    .col-t-7  {width: 58.33%;}
+    .col-t-8  {width: 66.66%;}
+    .col-t-9  {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+/*-------------------------------index---------------------------*/
+    aside.row a img.col-t-4 {
+        padding: 1%;
+    }
+/****---------------------catalogue------------------------------*/
+
+}
