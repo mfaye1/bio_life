@@ -37,7 +37,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 /*------------------------------------le grille------------------------------------------------*/
 [class*="col-"] {
     float: left;
-    padding: 0 15px;
+    padding: 11px 15px;
 }
 .row:after{
     content: "";
@@ -170,7 +170,7 @@ footer{
 
 #images_footer{
     text-align: right;
-    margin-top: 68px;
+    margin-top: 55px;
 }
 #facebook, #twitter, #linked{
     width: 30px;
@@ -278,16 +278,13 @@ section{
 */
 /*css du a*/
 section a{
+    width: 84%;
+    font-size: 0.8rem;
     display: block;
-    background-color: #ADFF2F;
-    width: 200px;
     height: 30px;
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    border: 1px solid #adff2f;
-    border-radius: 5px;
-    box-shadow: 2px 2px #c3c3c3 inset;
     color: black;
     margin: 5%;
 }
@@ -322,6 +319,25 @@ h3{
     text-decoration: none;
     color: #000;
     margin-left: 10px;
+}
+
+/*********************/
+
+.btn-2 {
+    border: 1px solid darkgrey;
+    box-shadow: 0px 2px 0 darkgrey, 2px 4px 6px darkgrey;
+    font-weight: 100;
+    transition: all 150ms linear;
+}
+
+.btn-2:hover {
+    background: rgba(149, 218, 39, 0.37);
+    font-weight: 700;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
+    color: black;
+    text-decoration: none;
+    transition: all 250ms linear;
 }
 
 /*---------------------------------------formulaire -------------------------------------------*/
