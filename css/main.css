@@ -252,6 +252,7 @@ form{
     margin: auto;
 }
 fieldset{
+    border: 2px solid #adff2f;
     padding: 5%;
     margin-top: 2%;
     border-radius: 15px;
@@ -270,8 +271,26 @@ input{
     width: 250px;
 }
 #submit{
+    display: block;
+    background-color: #ADFF2F;
+    width: 200px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #adff2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c3c3c3 inset;
+    color: black;
     margin-top: 3%;
     margin-left: 30%;
+    margin-bottom: 3%;
+}
+#submit:hover{
+    padding-top: 2px;
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px #adff2f;
 }
 
 /*--------------------------------index quelques positionnement----------------------------*/
