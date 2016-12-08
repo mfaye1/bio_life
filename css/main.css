@@ -300,6 +300,12 @@ section.col-9 a:hover{
 
 .catalogue_image{
     display: inline-block;
+    width: 28%;
+}
+
+.text_suit_image{
+    display: inline-block;
+    width: 200px;
 }
 
 h3{
