@@ -590,6 +590,7 @@ aside a img.col-4:hover{
     #liste ul li{
         text-align: center;
     }
+<<<<<<< HEAD
 
     header div img{
         height: 100px;
@@ -597,6 +598,8 @@ aside a img.col-4:hover{
         float: left;
     }
 
+=======
+>>>>>>> 91eca32c1901f16ef3f9338329e4923a959b3c84
     div.cadre_produit{
         margin: 5%;
         border: 1px solid #adff2f;
@@ -604,6 +607,7 @@ aside a img.col-4:hover{
         border-radius: 10px;
         box-shadow: 4px 4px #c3c3c3;
     }
+<<<<<<< HEAD
 
     nav ul li:nth-of-type(2){
         display: none;
@@ -624,6 +628,8 @@ aside a img.col-4:hover{
         width: 91%;
     }
 
+=======
+>>>>>>> 91eca32c1901f16ef3f9338329e4923a959b3c84
     /********formulaire*****/
     label{
         display: block;
