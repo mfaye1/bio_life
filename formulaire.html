@@ -10,20 +10,20 @@
 <body id="wrapper">
 <header>
     <div class="row" >
-        <div class="col-3">
-            <img src="images/Logo_bio.png" alt="logo_site" />
+        <div class="col-3 col-m-12">
+            <a href="index.html"><img src="images/logo_bio.png" alt="logo_site" /></a>
         </div>
-        <nav class="col-9">
+        <nav class="col-9 col-m-12">
             <ul class="row">
-                <li class="col-3"><a href="index.html">Acceuil</a></li><!--
-            --><li class="col-3"><a href="#">A propos</a></li><!--
-            --><li class="col-3"><a href="catalogue.html">Catalogue</a></li><!--
-            --><li class="col-3"><a href="formulaire.html">Contact</a></li>
+                <li class="col-3 col-m-4"><a href="index.html">Acceuil</a></li><!--
+            --><li class="col-3 col-m-4"><a href="#">A propos</a></li><!--
+            --><li class="col-3 col-m-4"><a href="catalogue.html">Catalogue</a></li><!--
+            --><li class="col-3 col-m-4"><a href="formulaire.html">Commander</a></li>
             </ul>
         </nav>
     </div>
 </header>
-    <form>
+    <form action="#">
         <fieldset>
             <legend>Vos Informations </legend>
 
@@ -54,7 +54,7 @@
                 <label for="post">Code Postal: </label>
                 <input type="text" name="post" id="post" value="" placeholder="H3L3K5" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z]●?[0-9][A-Z][0-9]$">
             </div>
-            <div class="div_form">
+            <div id="image_footer" class="div_form">
                 <label for="ville">Ville: </label>
                 <select  name="ville" id="ville">
                     <option>selectionner</option>
@@ -92,13 +92,21 @@
                 <input type="text" name="total" id="total" >
             </div>
         </fieldset>
-        <input type="submit" name="submit" id="submit">
+        <input type="submit" name="submit" id="submit" value="Commander">
+        <a href="#openModal">Annuler</a>
     </form>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <p>Desolé vous venez d'annuler votre commande <br/><br/><br/> Nous vous remercions pour votre visite</p>
+        <p>A bientot</p>
+    </div>
+</div>
     <footer class="row">
         <div class="col-8">
             <p>&#169 2016, Droits réservé @isiprojet</p>
         </div>
-        <div class="col-4">
+        <div id="images_footer" class="col-4">
             <a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="images/Logo-facebook-footer.png" alt="facebook"></a>
             <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter-ios-logo%20copy.png" alt="twitter"></a>
             <a href="https://linkedin.com/" target="_blank"><img id="linked" src="images/linkeed.png" alt="google"></a>

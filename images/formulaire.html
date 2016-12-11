@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>formulaire</title>
+</head>
+<body id="wrapper">
+<header>
+    <div class="row" >
+        <div class="col-3">
+            <a href="index.html"><img src="images/logo_bio.png" alt="logo_site" /></a>
+        </div>
+        <nav class="col-9">
+            <ul class="row">
+                <li class="col-3"><a href="index.html">Acceuil</a></li><!--
+            --><li class="col-3"><a href="#">A propos</a></li><!--
+            --><li class="col-3"><a href="catalogue.html">Catalogue</a></li><!--
+            --><li class="col-3"><a href="formulaire.html">Commander</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <form action="#">
+        <fieldset>
+            <legend>Vos Informations </legend>
+
+            <div class="div_form">
+                <label for="nom">Nom: </label>
+                <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom de famille" required pattern="#^[a-z]+[ \-']?[[a-z]+[ \-']?]*[a-z]+$#">
+            </div>
+            <div class="div_form">
+                <label for="prenom">Prenom: </label>
+                <input type="text" name="prenom" id="prenom" value="" placeholder="Entrez votre Prenom" required pattern="#^[a-z]+[ \-']?[[a-z]+[ \-']?]*[a-z]+$#">
+            </div>
+            <div class="div_form">
+                <label for="phone">Telephone: </label>
+                <input type="tel" name="phone" id="phone" value="" placeholder="000-000-0000" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+            </div>
+            <div class="div_form">
+                <label for="mail">Email: </label>
+                <input type="email" name="mail" id="mail" value="" placeholder="example@exemple.com">
+            </div>
+            <div class="div_form">
+                <label for="sexe_h">Homme:</label>
+                <input type="radio" name="sexe" id="sexe_h" value="sexe_h"/>
+                <br/><br/>
+                <label for="sexe_f">Femme:</label>
+                <input type="radio" name="sexe" id="sexe_f" value="sexe_f"/>
+            </div>
+            <div class="div_form">
+                <label for="post">Code Postal: </label>
+                <input type="text" name="post" id="post" value="" placeholder="H3L3K5" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z]●?[0-9][A-Z][0-9]$">
+            </div>
+            <div id="image_footer" class="div_form">
+                <label for="ville">Ville: </label>
+                <select  name="ville" id="ville">
+                    <option>selectionner</option>
+                    <option>Montréal</option>
+                    <option>Paris</option>
+                    <option>Dakar</option>
+                    <option>Toronto</option>
+                    <option>Autres..</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Votre Commande</legend>
+            <div class="div_form">
+                <label for="date">Date de la Commande: </label>
+                <input type="date" name="date" id="date" >
+            </div>
+            <div class="div_form">
+                <label for="choix">Votre Type de Bio: </label>
+                <input type="text" name="liste" list="liste" id="choix">
+                <datalist id="liste" >
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                    <option>type de bio</option>
+                </datalist>
+            </div>
+            <div class="div_form">
+                <label for="nombre">Nombre de produits</label>
+                <input type="number" name="nombre" id="nombre">
+            </div>
+            <div class="div_form">
+                <label for="total">Total:</label>
+                <input type="text" name="total" id="total" >
+            </div>
+        </fieldset>
+        <input type="submit" name="submit" id="submit" value="Commander">
+        <a href="#openModal">Annuler</a>
+    </form>
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <p>Desolé vous venez d'annuler votre commande <br/><br/><br/> Nous vous remercions pour votre visite</p>
+        <p>A bientot</p>
+    </div>
+</div>
+    <footer class="row">
+        <div class="col-8">
+            <p>&#169 2016, Droits réservé @isiprojet</p>
+        </div>
+        <div id="images_footer" class="col-4">
+            <a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="images/Logo-facebook-footer.png" alt="facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter-ios-logo%20copy.png" alt="twitter"></a>
+            <a href="https://linkedin.com/" target="_blank"><img id="linked" src="images/linkeed.png" alt="google"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

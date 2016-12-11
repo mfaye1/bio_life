@@ -7,9 +7,13 @@ aside, div, section, header, footer, nav {
 
 html{
     font-size: 16px;
+    font-family: Helvetica, Arial, "Lucida Grande", Verdana, sans-serif;
 }
 
 body{
+    background: -moz-linear-gradient(#fff, #c3c3c3);
+    background: -webkit-linear-gradient(#fff, #c3c3c3);
+    background: -o-linear-gradient(#fff, #c3c3c3);
 }
 /*le degrade*/
 /*
@@ -26,13 +30,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 #wrapper{
     width: 80%;
     margin: auto;
+    background-color: white;
 }
 
 
 /*------------------------------------le grille------------------------------------------------*/
 [class*="col-"] {
     float: left;
-    padding: 0 15px;
+    padding: 11px 15px;
 }
 .row:after{
     content: "";
@@ -54,38 +59,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', end
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-/*--------------------------------grillle de tablette-------------------------------------------------*/
-.col-t-1  {width: 8.33%;}
-.col-t-2  {width: 16.66%;}
-.col-t-3  {width: 25%;}
-.col-t-4  {width: 33.33%;}
-.col-t-5  {width: 41.66%;}
-.col-t-6  {width: 50%;}
-.col-t-7  {width: 58.33%;}
-.col-t-8  {width: 66.66%;}
-.col-t-9  {width: 75%;}
-.col-t-10 {width: 83.33%;}
-.col-t-11 {width: 91.66%;}
-.col-t-12 {width: 100%;}
-/*--------------------------------------------grille mobile-------------------------------------------*/
-.col-m-1  {width: 8.33%;}
-.col-m-2  {width: 16.66%;}
-.col-m-3  {width: 25%;}
-.col-m-4  {width: 33.33%;}
-.col-m-5  {width: 41.66%;}
-.col-m-6  {width: 50%;}
-.col-m-7  {width: 58.33%;}
-.col-m-8  {width: 66.66%;}
-.col-m-9  {width: 75%;}
-.col-m-10 {width: 83.33%;}
-.col-m-11 {width: 91.66%;}
-.col-m-12 {width: 100%;}
-
-
 /*-----------------------------------------HEADER------------------------------------------------------*/
 header{
     height: 100px;
-    background-color: #adff2f;
+    /*!*background-color: #adff2f;*! je le met en commentaire simplement pour que tu me donne ton avis sur le style que j'ai mis*/
 }
 header div{
     height: 100px;
@@ -96,6 +73,7 @@ header div img{
     height: 100px;
     padding: 0;
 }
+/*---------------NAVIGATION--------------*/
 nav{
     height: 100px;
     padding: 0;
@@ -115,13 +93,59 @@ nav ul.row{
 }
 nav ul li a{
     text-decoration: none;
+    color: #49d135;
+    position: relative;
+    transition: all 2s;
+}
 
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: -5px auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #62c446;
+    z-index: 1;
+}
+nav ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
 }
 
 /*----------------------------------------footer----------------------------------------------------*/
 footer{
     height: 100px;
-    background-color: rgb(173,255,47);
+    /*background-color: rgb(173,255,47);*/
+    background-color: rgba(149, 218, 39, 0.37);
+    margin-top: 20px;
+}
+
+#images_footer{
+    text-align: right;
+    margin-top: 55px;
+}
+#facebook, #twitter, #linked{
+    width: 30px;
 }
 
 /*----------------------------------------carrousel---------------------------------------------------*/
@@ -142,8 +166,9 @@ div#carrousel figure{
 
 div#carrousel figure img{
     width: 20%;
-    height: auto;
+    height: 600px;
     float: left;
+    margin-top: 20px;
 }
 
 div#carrousel{
@@ -176,6 +201,7 @@ div#carrousel figure {
     left: 0;
     text-align: left;
     animation: 10s slide infinite; /*j'ai mis 5s pr tester*/
+
 }
 
 
@@ -198,10 +224,14 @@ div#liste ul li{
     border-bottom: 1px solid gray;
     background-color: #c3c3c3;
 }
+div#liste ul li:hover{
+    transform: scale(1.2);
+}
 #liste h1{
+    color: white;
     text-align: center;
     margin-bottom: 0;
-    background-color: #adff2f;
+    background-color: rgba(149, 218, 39, 0.37);
 }
 
 /*
@@ -223,17 +253,14 @@ section{
 }
 */
 /*css du a*/
-section.col-9 a{
+section a{
+    width: 84%;
+    font-size: 0.8rem;
     display: block;
-    background-color: #ADFF2F;
-    width: 200px;
     height: 30px;
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-    border: 1px solid #adff2f;
-    border-radius: 5px;
-    box-shadow: 2px 2px #c3c3c3 inset;
     color: black;
     margin: 5%;
 }
@@ -241,16 +268,55 @@ section.col-9 a:hover{
     padding-top: 2px;
     background-color: gray;
     color: white;
-    box-shadow: 2px 2px #adff2f;
+    box-shadow: 2px 2px rgba(149, 218, 39, 0.37);
+}
+
+div#liste li{
+    padding: 2% 0;
+}
+div#liste li:hover{
+    background-color: darkgrey;
 }
 /***********************/
 
 .catalogue_image{
     display: inline-block;
+    width: 140px;
+}
+
+.text_suit_image{
+    display: inline-block;
+    width: 200px;
 }
 
 h3{
     width: 70%;
+}
+
+/*************/
+.liste_produits{
+    text-decoration: none;
+    color: #000;
+    margin-left: 10px;
+}
+
+/*********************/
+
+.btn-2 {
+    border: 1px solid darkgrey;
+    box-shadow: 0px 2px 0 darkgrey, 2px 4px 6px darkgrey;
+    font-weight: 100;
+    transition: all 150ms linear;
+}
+
+.btn-2:hover {
+    background: rgba(149, 218, 39, 0.37);
+    font-weight: 700;
+    border: 1px solid white;
+    box-shadow: 1px 1px 2px white;
+    color: black;
+    text-decoration: none;
+    transition: all 250ms linear;
 }
 
 /*---------------------------------------formulaire -------------------------------------------*/
@@ -259,11 +325,12 @@ form{
     margin: auto;
 }
 fieldset{
-    border: 2px solid #adff2f;
+    border: 0.5px solid rgba(149, 218, 39, 0.7);
     padding: 5%;
     margin-top: 2%;
     border-radius: 15px;
     box-shadow: #c2c2c2 5px 5px ;
+    background-color: #fbfbfb;
 }
 .div_form{
     display:block ;
@@ -273,6 +340,10 @@ label{
     display: inline-block;
     width: 30%;
 }
+div.div_form:nth-of-type(5) label{
+    display: inline-block;
+    width: 15%;
+}
 input{
     border-radius: 7px;
     width: 250px;
@@ -281,19 +352,41 @@ input{
     display: block;
     background-color: #ADFF2F;
     width: 200px;
-    height: 30px;
+    height: 50px;
     text-decoration: none;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
     border: 1px solid #adff2f;
     border-radius: 5px;
     box-shadow: 2px 2px #c3c3c3 inset;
     color: black;
     margin-top: 3%;
     margin-left: 30%;
-    margin-bottom: 3%;
+    /*margin-bottom: 3%;*/
 }
 #submit:hover{
+    padding-top: 2px;
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px #adff2f;
+}
+form a{
+    display: block;
+    background-color: #ADFF2F;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #adff2f;
+    border-radius: 5px;
+    box-shadow: 2px 2px #c3c3c3 inset;
+    color: black;
+    margin-top: 3%;
+    margin-left: 30%;
+
+}
+form a:hover {
     padding-top: 2px;
     background-color: gray;
     color: white;
@@ -311,10 +404,17 @@ h2 p{
     text-align: justify;
 }
 aside img.col-4:first-of-type{
-    padding-left: 0;
+padding-left: 0;
 }
 aside img.col-4:last-of-type{
-    padding-right: 0;
+padding-right: 0;
+}
+aside a img.col-4[alt="txt_a_propos"]{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+aside a img.col-4:hover{
+    transform: scale(1.3);
 }
 /*-------------------------------------details-----------------------------------------------*/
 /*le font 3D*/
@@ -381,4 +481,168 @@ aside img.col-4:last-of-type{
     font-size: 20px;
     color: #adff2f;
     margin-bottom: 0;
+}
+/**************modal*******************/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #adff2f);
+    background: -webkit-linear-gradient(#fff, #adff2f);
+    background: -o-linear-gradient(#fff, #adff2f);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #adff2f; }
+
+/**************------------------------------------------- Pour les tablettes 960px -----------------------------------*/
+@media only screen and (max-width: 960px) {
+    body{
+        background-color: white;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    /*--------------------------------grillle de tablette-------------------------------------------------*/
+    .col-t-1  {width: 8.33%;}
+    .col-t-2  {width: 16.66%;}
+    .col-t-3  {width: 25%;}
+    .col-t-4  {width: 33.33%;}
+    .col-t-5  {width: 41.66%;}
+    .col-t-6  {width: 50%;}
+    .col-t-7  {width: 58.33%;}
+    .col-t-8  {width: 66.66%;}
+    .col-t-9  {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+
+/*-------------------------------index---------------------------*/
+    aside.row a img.col-t-4 {
+        padding: 1%;
+    }
+/****---------------------catalogue------------------------------*/
+
+}
+
+/***************************--------------------------------pour mobile 760px--------------------------------*/
+@media only screen and (max-width: 760px) {
+    /*--------------------------------------------grille mobile-------------------------------------------*/
+    .col-m-1  {width: 8.33%;}
+    .col-m-2  {width: 16.66%;}
+    .col-m-3  {width: 25%;}
+    .col-m-4  {width: 33.33%;}
+    .col-m-5  {width: 41.66%;}
+    .col-m-6  {width: 50%;}
+    .col-m-7  {width: 58.33%;}
+    .col-m-8  {width: 66.66%;}
+    .col-m-9  {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    /****------------*/
+    body{
+        background-color: white;
+    }
+    #wrapper{
+        width: 100%;
+    }
+    #liste ul li{
+        text-align: center;
+    }
+
+    header div img{
+        height: 100px;
+        padding: 0;
+        float: left;
+    }
+
+    div.cadre_produit{
+        margin: 5%;
+        border: 1px solid #adff2f;
+        padding: 1%;
+        border-radius: 10px;
+        box-shadow: 4px 4px #c3c3c3;
+    }
+
+    nav ul li:nth-of-type(2){
+        display: none;
+    }
+
+    /********detail*****/
+    #details{
+        margin: 40% 10% 10% 10%;
+    }
+
+    #details img{
+        width: 90%;
+        border-right: none;
+    }
+    /********catalogue*****/
+
+    .cadre_produit {
+        width: 91%;
+    }
+
+    /********formulaire*****/
+    label{
+        display: block;
+        width: 100%;
+    }
+    div.div_form:nth-of-type(5) label{
+        display: inline-block;
+        width: 5%;
+    }
+   input{
+       height: 50px;
+       width: 250px;
+   }
+   #ville{
+       height: 50px;
+       width: 250px;
+   }
+    input[type=radio]{
+        height: 20px;
+        width: 200px;
+    }
 }
