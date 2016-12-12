@@ -431,6 +431,7 @@ aside a img.col-4:hover{
 
 }
 #details{
+    background-color: white;
     width: 70%;
     margin: 10%;
     border: 2px solid #adff2f;
